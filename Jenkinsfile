@@ -1,6 +1,6 @@
 pipeline{
     environment {
-		registry = 'samnur82/booklandmain'
+		registry = 'samnur82/booklandmain2'
 		registryCred = 'my_dockerhub'
 		dockerImage = ''
     }
