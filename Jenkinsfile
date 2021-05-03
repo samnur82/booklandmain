@@ -30,5 +30,20 @@ pipeline{
 		}
             }
         }
+        stage('Test Docker Image'){
+            steps{
+		sh 'docker image ls -a'
+            }
+	}
+        stage('Push Image to Docker Hub'){
+            steps{
+		script {
+                    docker.withRegistry( '', registryCred ) {
+			dockerImage.push()
+                        dockerImage.push('latest')
+                    }
+		}
+	    }
+        }
     }
 }
