@@ -7,9 +7,9 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-    <head>
+    <head>  
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Book's Land</title>
+        <title>Book's Land</title>    
     </head>
     <body>
         <h1>Welcome to books land</h1>
