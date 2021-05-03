@@ -15,7 +15,7 @@ pipeline{
         }
         stage('clone repo') {
             steps {
-               sh 'git pull'
+               sh 'git pull https://github.com/samnur82/booklandmain.git master'
             }
         }
         stage('Build BookLandMain War') {
