@@ -15,7 +15,6 @@ pipeline{
         }
         stage('clone repo') {
             steps {
-               sh 'git clone https://github.com/samnur82/booklandmain.git'
                sh 'git pull'
             }
         }
