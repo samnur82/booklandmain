@@ -26,7 +26,7 @@ pipeline{
         stage('Build BookLandMain Docker Image') {
             steps{
 	 	script {
-                    dockerImage = docker.build registry + ":main2-$BUILD_NUMBER"
+                    dockerImage = docker.build registry + ":$BUILD_NUMBER"
 		}
             }
         }
@@ -47,7 +47,7 @@ pipeline{
         }
         stage('Cleaning Up Local Repo') { 
             steps { 
-                 sh "docker rmi $registry:main2-$BUILD_NUMBER" 
+                 sh "docker rmi $registry:$BUILD_NUMBER" 
             }
         } 
     }
